@@ -1,4 +1,11 @@
+body {
+  overflow: disabled;
+}
 
+.limitImageSize {
+  width:100%;
+  height:643px;
+}
 a:link {color: black;} /* unvisited link */
 a:visited {color: black;} /* visited link */
 a:hover {color: black;} /* mouse over link */
