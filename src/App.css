@@ -1,3 +1,7 @@
+/*
+TODO:
+- Add animations to fade inferences in
+*/
 body {
   overflow: disabled;
 }
@@ -13,6 +17,7 @@ body {
   background-color: #ffffff;
   opacity:60%
 }
+
 a:link {color: black;} /* unvisited link */
 a:visited {color: black;} /* visited link */
 a:hover {color: black;} /* mouse over link */

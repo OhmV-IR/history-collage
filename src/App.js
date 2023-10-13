@@ -36,16 +36,16 @@ function App() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active" onClick={showInference1}>
-    <img src="/img/vimy-monument-cropped.jpg" className="d-block w-100 limitImageSize" alt="The monument of Vimy Ridge with the ghosts of soldiers marching up the hill"></img>
+    <img src="/img/the-taking-of-vimy-ridge-cropped.jpg" className="d-block w-100 limitImageSize" alt="The monument of Vimy Ridge with the ghosts of soldiers marching up the hill"></img>
     </div>
     <div className="carousel-item" onClick={showInference2}>
     <img src="/img/crest-of-vimy-ridge-cropped.jpg" className="d-block w-100 limitImageSize" alt="A lone soldier walking on Vimy Ridge"></img>
     </div>
     <div className="carousel-item" onClick={showInference3}>
-    <img src="/img/the-taking-of-vimy-ridge-cropped.jpg" className="d-block w-100 limitImageSize" alt="Depicts the battle of vimy ridge and a field gun firing on German positions"></img>
+    <img src="/img/cemetary-on-vimy-ridge-cropped.jpg" className="d-block w-100 limitImageSize" alt="Depicts the battle of vimy ridge and a field gun firing on German positions"></img>
     </div>
     <div className="carousel-item" onClick={showInference4}>
-      <img src="/img/cemetary-on-vimy-ridge-cropped.jpg" className="d-block w-100 limitImageSize" alt="A cemetary on the battlefield of Vimy Ridge"></img>
+      <img src="/img/vimy-monument.jpg" className="d-block w-100 limitImageSize" alt="A cemetary on the battlefield of Vimy Ridge"></img>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
