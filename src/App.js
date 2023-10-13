@@ -35,7 +35,7 @@ function App() {
     <img src="/img/the-taking-of-vimy-ridge-cropped.jpg" onClick={showInference3} className="d-block w-100 limitImageSize" alt="Depicts the battle of vimy ridge and a field gun firing on German positions"></img>
     </div>
     <div className="carousel-item">
-      <img src="/img/cemetary-on-vimy-ridge-cropped.jpg" onClick={showInference4} onMouseDownclassName="d-block w-100 limitImageSize" alt="A cemetary on the battlefield of Vimy Ridge"></img>
+      <img src="/img/cemetary-on-vimy-ridge-cropped.jpg" onClick={showInference4} className="d-block w-100 limitImageSize" alt="A cemetary on the battlefield of Vimy Ridge"></img>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
