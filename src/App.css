@@ -5,6 +5,10 @@ TODO:
 body {
   overflow: disabled;
 }
+.inferenceText{
+  max-width:300px;
+  max-height:200px;
+}
 
 .limitImageSize {
   width:100%;

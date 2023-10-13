@@ -59,19 +59,19 @@ function App() {
 </div>
 <div className="inferences">
         {displayInference1
-          ?   <h1 id="inference1">Inference 1</h1>
+          ?   <h1 id="inference1" className="inferenceText">Inference 1</h1>
           : <></>
       }
       {displayInference2
-          ?   <h1 id="inference2">Inference 2</h1>
+          ?   <h1 id="inference2" className="inferenceText">Inference 2</h1>
           : <></>
       }
       {displayInference3
-          ?   <h1 id="inference3">Inference 3</h1>
+          ?   <h1 id="inference3" className="inferenceText">Inference 3</h1>
           : <></>
       }
       {displayInference4
-          ?   <h1 id="inference4">Inference 4</h1>
+          ?   <h1 id="inference4" className="inferenceText">Inference 4</h1>
           : <></>
       }
 </div>
