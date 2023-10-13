@@ -6,6 +6,13 @@ body {
   width:100%;
   height:643px;
 }
+.inferences {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ffffff;
+  opacity:60%
+}
 a:link {color: black;} /* unvisited link */
 a:visited {color: black;} /* visited link */
 a:hover {color: black;} /* mouse over link */
