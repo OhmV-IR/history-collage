@@ -1,7 +1,6 @@
 import './App.css';
 /* TODO: 
-- Resize all images into 1 standard size
-- Make carousel fit inside viewport
+- Make popup show up and write inferences
 */
 const showInference1 = async event => {
 
