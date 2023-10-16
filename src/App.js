@@ -20,6 +20,13 @@ function App() {
     console.log("Show / hide inference 4");
     changeInference4Visibility(!displayInference4);
   }
+  const disableInferences = async event => {
+    console.log("Show / hide inference 1");
+    changeInference1Visibility(false);
+    changeInference2Visibility(false);
+    changeInference3Visibility(false);
+    changeInference4Visibility(false);
+  }
   const [displayInference1, changeInference1Visibility] = useState(false);
   const [displayInference2, changeInference2Visibility] = useState(false);
   const [displayInference3, changeInference3Visibility] = useState(false);
@@ -29,10 +36,10 @@ function App() {
     <>
 <div id="carouselExampleIndicators" className="carousel slide">
   <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" onClick={disableInferences} data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" onClick={disableInferences} data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" onClick={disableInferences} data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" onClick={disableInferences} data-bs-slide-to="3" aria-label="Slide 4"></button>
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active" onClick={showInference1}>
@@ -48,11 +55,11 @@ function App() {
       <img src="/img/vimy-monument-cropped.jpg" className="d-block w-100 limitImageSize" alt="The monument of Vimy Ridge with the ghosts of soldiers marching up the hill"></img>
     </div>
   </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+  <button className="carousel-control-prev" type="button" onClick={disableInferences} data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Previous</span>
   </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+  <button className="carousel-control-next" type="button" onClick={disableInferences} data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Next</span>
   </button>
