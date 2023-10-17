@@ -42,17 +42,17 @@ function App() {
     <button type="button" data-bs-target="#carouselExampleIndicators" onClick={disableInferences} data-bs-slide-to="3" aria-label="Slide 4"></button>
   </div>
   <div className="carousel-inner">
-    <div className="carousel-item active limitImageSize" onClick={showInference1}>
-    <img src="/img/the-taking-of-vimy-ridge-cropped.jpg" className="d-block w-100" alt="Depicts the battle of vimy ridge and a field gun firing on German positions"></img>
+    <div className="carousel-item active" onClick={showInference1}>
+    <img src="/img/the-taking-of-vimy-ridge-cropped.jpg" className="d-block w-100 limitImageSize" alt="Depicts the battle of vimy ridge and a field gun firing on German positions"></img>
     </div>
-    <div className="carousel-item limitImageSize" onClick={showInference2}>
-    <img src="/img/crest-of-vimy-ridge-cropped.jpg" className="d-block w-100" alt="A lone soldier walking on Vimy Ridge"></img>
+    <div className="carousel-item" onClick={showInference2}>
+    <img src="/img/crest-of-vimy-ridge-cropped.jpg" className="d-block w-100 limitImageSize" alt="A lone soldier walking on Vimy Ridge"></img>
     </div>
-    <div className="carousel-item limitImageSize" onClick={showInference3}>
-    <img src="/img/cemetary-on-vimy-ridge-cropped.jpg" className="d-block w-100" alt="A cemetary on the battlefield of Vimy Ridge"></img>
+    <div className="carousel-item" onClick={showInference3}>
+    <img src="/img/cemetary-on-vimy-ridge-cropped.jpg" className="d-block w-100 limitImageSize" alt="A cemetary on the battlefield of Vimy Ridge"></img>
     </div>
-    <div className="carousel-item limitImageSize" onClick={showInference4}>
-      <img src="/img/vimy-monument-cropped.jpg" className="d-block w-100" alt="The monument of Vimy Ridge with the ghosts of soldiers marching up the hill"></img>
+    <div className="carousel-item" onClick={showInference4}>
+      <img src="/img/vimy-monument-cropped.jpg" className="d-block w-100 limitImageSize" alt="The monument of Vimy Ridge with the ghosts of soldiers marching up the hill"></img>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" onClick={disableInferences} data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -66,19 +66,19 @@ function App() {
 </div>
 <div className="inferences">
         {displayInference1
-          ?   <h1 id="inference1" className="inferenceText">Inference 1</h1>
+          ?   <h1 id="inference1" className="inferenceText">The focus of this painting is the crew of a field gun firing on German positions during the attack on Vimy ridge. The continuing attack and the persistence of Canadian troops led us to claim a key victory not only for the allies, but for Canada as a power on the world stage. At this stage of the war, the early excitement was gone, support for the war was wavering and losses were mounting from the long, drawn-out trench warfare that wasn’t the swift end to the war that Canadians wanted. This battle helped restore morale to troops and show Canadians that an allied victory and an end to the war was possible, and it might be coming soon.</h1>
           : <></>
       }
       {displayInference2
-          ?   <h1 id="inference2" className="inferenceText">Inference 2</h1>
+          ?   <h1 id="inference2" className="inferenceText">A lone soldier walking up the war-torn landscape of Vimy ridge after the battle, implying that he lost many of his friends in the battle. The art of Gyrth Russell painted the war in a different light, showing the true cost of war that Canada was suffering. It might also reference how the soldier has gone through a lot of trauma during his time in the war and that will be difficult to overcome, even after the war inevitably ends. </h1>
           : <></>
       }
       {displayInference3
-          ?   <h1 id="inference3" className="inferenceText">Inference 3</h1>
+          ?   <h1 id="inference3" className="inferenceText">This picture was painted by a Lieutenant who realized just how many casualties Canada was suffering and that even victories like Vimy ridge cost us dearly. I think that the grave in the shell refers to shellshock, the name given to what we now know as PTSD during WW1. The soldiers who returned home, often returned without their friends who had died in the service and struggled to reintegrate into society, keep a stable income and secure housing. The trauma that these soldiers received during combat would have been very difficult, if not impossible to overcome. I think that the grave symbolizes that many soldiers were buried by their traumas, figuratively if not literally. </h1>
           : <></>
       }
       {displayInference4
-          ?   <h1 id="inference4" className="inferenceText">Inference 4</h1>
+          ?   <h1 id="inference4" className="inferenceText">The ghosts of the soldiers are continuing to march up the ridge even after death because they are all determined in their objective of winning the battle and trying to end the agonizing war they have been fighting for 2 and a half years. The source of their determination originated from the wartime propaganda promising them a land “fit for heroes”, jobs, pensions and everything they wanted in life upon their return from their journey of “patriotism” and adventurism in Europe. </h1>
           : <></>
       }
 </div>
