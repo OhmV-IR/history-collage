@@ -16,6 +16,20 @@ body {
   left:0px;
   z-index:1;
 }
+#sideButton1 {
+  position:absolute;
+  left:5vw;
+  top:40vh;
+  width:12vw;
+  height:12vw;
+}
+#sideButton2 {
+  position:absolute;
+  right:5vw;
+  top:40vh;
+  width:12vw;
+  height:12vw;
+}
 @keyframes disappearAnim {
   0%{display:block}
   100%{display:none}

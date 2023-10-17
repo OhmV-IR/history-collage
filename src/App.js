@@ -60,11 +60,11 @@ function App() {
       <img src="/img/vimy-monument-cropped.jpg" className="d-block w-100 limitImageSize" alt="The monument of Vimy Ridge with the ghosts of soldiers marching up the hill"></img>
     </div>
   </div>
-  <button className="carousel-control-prev" type="button" onClick={disableInferences} data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+  <button className="carousel-control-prev" type="button" id="sideButton1" onClick={disableInferences} data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Previous</span>
   </button>
-  <button className="carousel-control-next" type="button" onClick={disableInferences} data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+  <button className="carousel-control-next" type="button" id="sideButton2" onClick={disableInferences} data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Next</span>
   </button>
