@@ -7,18 +7,22 @@ function App() {
   const showInference1 = async event => {
     console.log("Show / hide inference 1");
     changeInference1Visibility(!displayInference1);
+    document.getElementById("infoAlert").style.zIndex = "-1";
   }
   const showInference2 = async event => {
     console.log("Show / hide inference 2");
     changeInference2Visibility(!displayInference2);
+    document.getElementById("infoAlert").style.zIndex = "-1";
   }
   const showInference3 = async event => {
     console.log("Show / hide inference 3");
     changeInference3Visibility(!displayInference3);
+    document.getElementById("infoAlert").style.zIndex = "-1";
   }
   const showInference4 = async event => {
     console.log("Show / hide inference 4");
     changeInference4Visibility(!displayInference4);
+    document.getElementById("infoAlert").style.zIndex = "-1";
   }
   const disableInferences = async event => {
     console.log("Show / hide inference 1");
@@ -34,6 +38,7 @@ function App() {
   return (
     
     <>
+    <div id="infoAlert" className="alert alert-info" role="alert">Click on the center of the painting to show inferences</div>
 <div id="carouselExampleIndicators" className="carousel slide">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" onClick={disableInferences} data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
